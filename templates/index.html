@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmallPix</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Image Compressor</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required><br>
+      <button type="submit">Compress & Download</button>
+    </form>
+   
+  </div>
+</body>
+</html>
